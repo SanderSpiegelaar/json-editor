@@ -5,7 +5,13 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "outputs": [
+        "dist/**",
+        "build/**",
+        ".svelte-kit/**",
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
     "lint": {
       "dependsOn": ["^lint"]

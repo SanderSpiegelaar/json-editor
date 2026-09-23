@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
+  // Keep the shadcn registry's standard component APIs and utility types intact.
+  "ignoreFindings": [
+    "apps/desktop/src/lib/components/ui/**",
+    "apps/desktop/src/lib/utils.ts",
+  ],
+  "duplicates": {
+    // Generated shadcn theme tokens shared with the upstream React demos.
+    "ignoredClones": [
+      "dup:4cec6b4b:3",
+      "dup:1b530144:3",
+      "dup:17d2eaa6:2",
+      "dup:6f1e8179:2",
+      "dup:730ead8f:2",
+      "dup:b6827f2e:2",
+    ],
+  },
+}
