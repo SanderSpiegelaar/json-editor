@@ -24,6 +24,18 @@ pnpm dev
 - New, Open, window close, and application quit ask before discarding unsaved changes.
 - Use `Cmd/Ctrl+N`, `Cmd/Ctrl+O`, `Cmd/Ctrl+S`, and `Cmd/Ctrl+Shift+S`.
 
+The right-hand explorer opens a folder and lists its subfolders and `.json` files.
+Use its toolbar to create JSON files or folders, refresh, collapse the tree, or
+reveal the active file. Right-click an item to rename, cut/paste it into another
+folder, or delete it with confirmation. Renaming or moving an open file (or its
+parent folder) preserves unsaved edits and updates its save location.
+
+Resize the explorer by dragging its divider; toggle it with `Cmd/Ctrl+B`.
+Within the tree, use arrow keys, Home/End, Enter, F2, Delete, and `Cmd/Ctrl+X/V`.
+External changes appear on refresh or when the app regains focus. Each session
+requires selecting a folder again. Symlinks and non-JSON files are hidden;
+deleting a folder also deletes its hidden contents, as the confirmation explains.
+
 Files remain local. Filesystem permissions cover paths selected in the native
 dialogs; the app does not request blanket access to your home directory.
 The editor currently accepts strict JSON, including scalar roots and UTF-8 BOMs.
@@ -36,7 +48,7 @@ not part of the desktop application.
 pnpm build                 # Native release bundle for the current platform
 pnpm build:frontend        # Static SvelteKit output only
 pnpm check:desktop         # Desktop Svelte/TypeScript checks
-pnpm test:desktop          # Focused document-state tests
+pnpm test:desktop          # Focused document and explorer tests
 pnpm --filter @visual-json/desktop exec playwright install chromium
 pnpm --filter @visual-json/desktop test:e2e
 cargo check --manifest-path apps/desktop/src-tauri/Cargo.toml

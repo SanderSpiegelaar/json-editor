@@ -1,7 +1,7 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
-  "description": "Edit files explicitly selected through the native open and save dialogs.",
+  "description": "Edit JSON files and manage folders explicitly selected through native dialogs.",
   "windows": ["main"],
   "permissions": [
     "core:default",
@@ -10,6 +10,11 @@
     "dialog:allow-save",
     "dialog:allow-confirm",
     "fs:allow-read-text-file",
-    "fs:allow-write-text-file"
+    "fs:allow-write-text-file",
+    "fs:allow-read-dir",
+    "fs:allow-exists",
+    "fs:allow-mkdir",
+    "fs:allow-rename",
+    "fs:allow-remove"
   ]
 }

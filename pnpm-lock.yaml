@@ -63,6 +63,12 @@ importers:
       '@fontsource-variable/geist':
         specifier: ^5.3.0
         version: 5.3.0
+      '@internationalized/date':
+        specifier: ^3.12.4
+        version: 3.12.4
+      '@lucide/svelte':
+        specifier: ^1.47.0
+        version: 1.47.0(svelte@5.53.7)
       '@playwright/test':
         specifier: ^1.58.2
         version: 1.58.2
@@ -90,6 +96,9 @@ importers:
       cn:
         specifier: ^0.4.0
         version: 0.4.0
+      paneforge:
+        specifier: ^1.0.2
+        version: 1.0.2(svelte@5.53.7)
       shadcn-svelte:
         specifier: ^1.7.0
         version: 1.7.0(svelte@5.53.7)
@@ -1306,6 +1315,11 @@ packages:
     resolution: {integrity: sha512-ifnfqfy2Rfr0Sp2/SsLs+8JfnWrQ3RqUf+z2m2OR6W0h3GyWsSH9Vnzq5j7wuQIOFKEZ/bz4T14uTxhaxpzQjQ==}
     peerDependencies:
       svelte: ^5.0.0
+
+  '@lucide/svelte@1.47.0':
+    resolution: {integrity: sha512-tpuE7JIK9FzYDWsJx6PxHj9ROyCpnDxZfvHu5q5yHGKS2CFNjzSyf1o9/Ypu2A27GLvkPGqZcIMrF6idM+eQZQ==}
+    peerDependencies:
+      svelte: ^5
 
   '@mdx-js/loader@3.1.1':
     resolution: {integrity: sha512-0TTacJyZ9mDmY+VefuthVshaNIyCGZHJG2fMnGaDttCt8HmjUF7SizlHJpaCDoGnN635nK1wpzfpx/Xx5S4WnQ==}
@@ -4923,6 +4937,11 @@ packages:
   package-manager-detector@1.6.0:
     resolution: {integrity: sha512-61A5ThoTiDG/C8s8UMZwSorAGwMJ0ERVGj2OjoW5pAalsNOg15+iQiPzrLJ4jhZ1HJzmC2PIHT2oEiH3R5fzNA==}
 
+  paneforge@1.0.2:
+    resolution: {integrity: sha512-KzmIXQH1wCfwZ4RsMohD/IUtEjVhteR+c+ulb/CHYJHX8SuDXoJmChtsc/Xs5Wl8NHS4L5Q7cxL8MG40gSU1bA==}
+    peerDependencies:
+      svelte: ^5.29.0
+
   papaparse@5.5.3:
     resolution: {integrity: sha512-5QvjGxYVjxO59MGU2lHVYpRWBBtKHnlIAcSe1uNFCkkptUh63NFRj0FJQm7nR67puEruUci/ZkjmEFrjCAyP4A==}
 
@@ -5327,6 +5346,16 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
+  runed@0.23.4:
+    resolution: {integrity: sha512-9q8oUiBYeXIDLWNK5DfCWlkL0EW3oGbk845VdKlPeia28l751VpfesaB/+7pI6rnbx1I6rqoZ2fZxptOJLxILA==}
+    peerDependencies:
+      svelte: ^5.7.0
+
+  runed@0.29.2:
+    resolution: {integrity: sha512-0cq6cA6sYGZwl/FvVqjx9YN+1xEBu9sDDyuWdDW1yWX7JF2wmvmVKfH+hVCZs+csW+P3ARH92MjI3H9QTagOQA==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   runed@0.35.1:
     resolution: {integrity: sha512-2F4Q/FZzbeJTFdIS/PuOoPRSm92sA2LhzTnv6FXhCoENb3huf5+fDuNOg1LNvGOouy3u/225qxmuJvcV3IZK5Q==}
     peerDependencies:
@@ -5619,6 +5648,12 @@ packages:
 
   svelte-toolbelt@0.10.6:
     resolution: {integrity: sha512-YWuX+RE+CnWYx09yseAe4ZVMM7e7GRFZM6OYWpBKOb++s+SQ8RBIMMe+Bs/CznBMc0QPLjr+vDBxTAkozXsFXQ==}
+    engines: {node: '>=18', pnpm: '>=8.7.0'}
+    peerDependencies:
+      svelte: ^5.30.2
+
+  svelte-toolbelt@0.9.3:
+    resolution: {integrity: sha512-HCSWxCtVmv+c6g1ACb8LTwHVbDqLKJvHpo6J8TaqwUme2hj9ATJCpjCPNISR1OCq2Q4U1KT41if9ON0isINQZw==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.30.2
@@ -6900,6 +6935,10 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.5
 
   '@jsrob/svelte-portal@0.2.1(svelte@5.53.7)':
+    dependencies:
+      svelte: 5.53.7
+
+  '@lucide/svelte@1.47.0(svelte@5.53.7)':
     dependencies:
       svelte: 5.53.7
 
@@ -10920,6 +10959,12 @@ snapshots:
 
   package-manager-detector@1.6.0: {}
 
+  paneforge@1.0.2(svelte@5.53.7):
+    dependencies:
+      runed: 0.23.4(svelte@5.53.7)
+      svelte: 5.53.7
+      svelte-toolbelt: 0.9.3(svelte@5.53.7)
+
   papaparse@5.5.3: {}
 
   parent-module@1.0.1:
@@ -11427,6 +11472,16 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
+  runed@0.23.4(svelte@5.53.7):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.53.7
+
+  runed@0.29.2(svelte@5.53.7):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.53.7
+
   runed@0.35.1(@sveltejs/kit@2.70.3(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.53.7)(vite@7.3.1(@types/node@25.3.0)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.8.2)))(svelte@5.53.7)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.0)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.8.2)))(svelte@5.53.7):
     dependencies:
       dequal: 2.0.3
@@ -11822,6 +11877,13 @@ snapshots:
       svelte: 5.53.7
     transitivePeerDependencies:
       - '@sveltejs/kit'
+
+  svelte-toolbelt@0.9.3(svelte@5.53.7):
+    dependencies:
+      clsx: 2.1.1
+      runed: 0.29.2(svelte@5.53.7)
+      style-to-object: 1.0.14
+      svelte: 5.53.7
 
   svelte2tsx@0.7.51(svelte@5.53.7)(typescript@5.9.3):
     dependencies:
